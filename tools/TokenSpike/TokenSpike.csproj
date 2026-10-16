@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TokenSpike</RootNamespace>
+    <AssemblyName>TokenSpike</AssemblyName>
+    <!-- Ferramenta de validação; não entra na solução publicada. -->
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RunAsLauncher.Core\RunAsLauncher.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- O TokenFactory vive no serviço (só ele cria tokens elevados); o spike compila o mesmo arquivo. -->
+    <Compile Include="..\..\src\RunAsLauncher.Service\Elevation\TokenFactory.cs" Link="Elevation\TokenFactory.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RunAsLauncher/RunAsLauncher.csproj" />
+    <Project Path="src/RunAsLauncher.Admin/RunAsLauncher.Admin.csproj" />
+    <Project Path="src/RunAsLauncher.Core/RunAsLauncher.Core.csproj" />
+    <Project Path="src/RunAsLauncher.Service/RunAsLauncher.Service.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/TokenSpike/TokenSpike.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RunAsLauncher.Tests/RunAsLauncher.Tests.csproj" />
+    <Project Path="tests/RunAsLauncher.IntegrationTests/RunAsLauncher.IntegrationTests.csproj" />
+  </Folder>
+</Solution>

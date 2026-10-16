@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <!-- Mesmo ícone do launcher (um só ícone do produto). -->
+    <ApplicationIcon>..\RunAsLauncher\Resources\app.ico</ApplicationIcon>
+    <RootNamespace>RunAsLauncher.Admin</RootNamespace>
+    <AssemblyName>RunAsLauncher.Admin</AssemblyName>
+  </PropertyGroup>
+  <!-- Só ao publicar: um único EXE com o runtime embutido. Sem PublishTrimmed (WinForms não suporta trimming). -->
+  <PropertyGroup Condition="'$(_IsPublishing)' == 'true'">
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RunAsLauncher.Core\RunAsLauncher.Core.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+<Project>
+  <!-- Convenções globais do Spec (valem para todos os projetos da solução). -->
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>embedded</DebugType>
+    <Version>0.1.0</Version>
+    <Product>RunAs Launcher</Product>
+    <Company>Bruno Koch Dal Castel</Company>
+  </PropertyGroup>
+</Project>

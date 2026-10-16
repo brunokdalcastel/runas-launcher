@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>RunAsLauncher</RootNamespace>
+    <AssemblyName>RunAsLauncher.Core</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="RunAsLauncher.Tests" />
+    <InternalsVisibleTo Include="RunAsLauncher.Service" />
+    <InternalsVisibleTo Include="TokenSpike" />
+    <InternalsVisibleTo Include="RunAsLauncher" />
+  </ItemGroup>
+</Project>
